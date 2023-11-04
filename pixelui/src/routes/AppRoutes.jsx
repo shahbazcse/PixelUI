@@ -7,14 +7,15 @@ import Documentation from "../pages/documentation/Documentation";
 import Introduction from "../pages/documentation/gettingStarted/Introduction";
 import Colors from "../pages/documentation/gettingStarted/Colors";
 import Typography from "../pages/documentation/gettingStarted/Typography";
-import Avatar from "../pages/documentation/components/Avatar";
-import Alert from "../pages/documentation/components/Alert";
-import Badge from "../pages/documentation/components/Badge";
-import Button from "../pages/documentation/components/Button";
-import Card from "../pages/documentation/components/Card";
-import Headings from "../pages/documentation/components/Headings";
-import Image from "../pages/documentation/components/Image";
-import Text from "../pages/documentation/components/Text";
+
+import Avatar from "../pages/documentation/components/Avatar/Avatar";
+import Alert from "../pages/documentation/components/Alert/Alert";
+import Badge from "../pages/documentation/components/Badge/Badge";
+import Button from "../pages/documentation/components/Button/Button";
+import Card from "../pages/documentation/components/Card/Card";
+import Headings from "../pages/documentation/components/Headings/Headings";
+import Image from "../pages/documentation/components/Image/Image";
+import Text from "../pages/documentation/components/Text/Text";
 
 function AppRoutes() {
   return (
