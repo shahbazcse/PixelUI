@@ -7,7 +7,6 @@ import { BiSolidErrorAlt } from "react-icons/bi";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { BiError } from "react-icons/bi";
 import { AiOutlineInfoCircle } from "react-icons/ai";
-import { IoClose } from "react-icons/io5";
 
 const AlertComponents = ({ status, children }) => {
   let alertTextColor;
