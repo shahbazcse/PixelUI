@@ -38,7 +38,7 @@ const AlertComponents = ({ status, children }) => {
 
   return (
     <div>
-      <h2 className="heading_text">{headingText}</h2>
+      <h2 className="alert_heading_text">{headingText}</h2>
       <div
         className="alert_components"
         style={{ backgroundColor: alertBackgroundColor, color: alertTextColor }}

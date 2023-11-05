@@ -42,8 +42,8 @@
   cursor: pointer;
 }
 
-.heading_text {
+.alert_heading_text {
   font-size: 18px;
-  margin: 8px 0 6px 0;
+  margin: 8px 0 7px 0;
   letter-spacing: 1.2px;
 }
