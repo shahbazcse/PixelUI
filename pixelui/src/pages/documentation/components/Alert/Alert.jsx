@@ -95,22 +95,25 @@ const AlertPreview = () => {
 };
 
 const CodePreview = () => {
-  const codeText = `<AlertComponents status="error">
-  <AlertIcons status="error" />
-  There was a problem creating your account!
-</AlertComponents>
-<AlertComponents status="success">
-  <AlertIcons status="success" />
-  Thank you. Your submission has been sent.
-</AlertComponents>
-<AlertComponents status="warning">
-  <AlertIcons status="warning" />
-  Your daily data bandwith is about to end.
-</AlertComponents>
-<AlertComponents status="info">
-  <AlertIcons status="info" />
-  You've been inactive for a while, so we logged you out. Please Login to continue.
-</AlertComponents>`;
+  const codeText = `  <AlertComponents status="error">
+    <AlertIcons status="error" />
+    There was a problem creating your account!
+  </AlertComponents>
+
+  <AlertComponents status="success">
+    <AlertIcons status="success" />
+    Thank you. Your submission has been sent.
+  </AlertComponents>
+
+  <AlertComponents status="warning">
+    <AlertIcons status="warning" />
+    Your daily data bandwith is about to end.
+  </AlertComponents>
+  
+  <AlertComponents status="info">
+    <AlertIcons status="info" />
+    You've been inactive for a while, so we logged you out. Please Login to continue.
+  </AlertComponents>`;
   return <CodeBlock codeText={codeText} />;
 };
 
