@@ -16,11 +16,12 @@
 .alert {
   border: 1px solid #e7e7e7;
   border-radius: 8px;
-  padding: 8px 16px 16px;
+  padding: 8px 16px 18px;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-family: var(--raleway);
 }
 
 .alert_toggle {
@@ -44,5 +45,5 @@
 .heading_text {
   font-size: 18px;
   margin: 8px 0 6px 0;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
 }

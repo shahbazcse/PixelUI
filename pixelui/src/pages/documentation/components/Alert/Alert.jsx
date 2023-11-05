@@ -7,6 +7,7 @@ import { BiSolidErrorAlt } from "react-icons/bi";
 import { AiOutlineCheckCircle } from "react-icons/ai";
 import { BiError } from "react-icons/bi";
 import { AiOutlineInfoCircle } from "react-icons/ai";
+import { IoClose } from "react-icons/io5";
 
 const AlertComponents = ({ status, children }) => {
   let alertTextColor;
@@ -75,19 +76,20 @@ const AlertPreview = () => {
     <div className="alert">
       <AlertComponents status="error">
         <AlertIcons status="error" />
-        There was an error processing your request
+        There was a problem creating your account!
       </AlertComponents>
       <AlertComponents status="success">
         <AlertIcons status="success" />
-        Data uploaded to the server. Fire on!
+        Thank you. Your submission has been sent.
       </AlertComponents>
       <AlertComponents status="warning">
         <AlertIcons status="warning" />
-        Seems your account is about to expire, upgrade now.
+        Your daily data bandwith is about to end.
       </AlertComponents>
       <AlertComponents status="info">
         <AlertIcons status="info" />
-        The event is going live on August 30th. Get ready!
+        You've been inactive for a while, so we logged you out. Please Login to
+        continue.
       </AlertComponents>
     </div>
   );
@@ -96,19 +98,19 @@ const AlertPreview = () => {
 const CodePreview = () => {
   const codeText = `<AlertComponents status="error">
   <AlertIcons status="error" />
-  There was an error processing your request
+  There was a problem creating your account!
 </AlertComponents>
 <AlertComponents status="success">
   <AlertIcons status="success" />
-  Data uploaded to the server. Fire on!
+  Thank you. Your submission has been sent.
 </AlertComponents>
 <AlertComponents status="warning">
   <AlertIcons status="warning" />
-  Seems your account is about to expire, upgrade now.
+  Your daily data bandwith is about to end.
 </AlertComponents>
 <AlertComponents status="info">
   <AlertIcons status="info" />
-  The event is going live on August 30th. Get ready!
+  You've been inactive for a while, so we logged you out. Please Login to continue.
 </AlertComponents>`;
   return <CodeBlock codeText={codeText} />;
 };
