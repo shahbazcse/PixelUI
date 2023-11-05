@@ -126,7 +126,6 @@ function Alert() {
     <div>
       <h1>Alert</h1>
       <p className="desc">Description goes here</p>
-      <p>Usage:</p>
       <div className="alert_toggle">
         <button
           onClick={() => setShowCode(false)}
