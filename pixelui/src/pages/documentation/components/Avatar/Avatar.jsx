@@ -34,47 +34,65 @@ const AvatarPreview = () => {
       <div>
         <h2 className="avatar_heading_text">Round Avatar</h2>
         <div className="avatar_box">
-          <AvatarComponent
-            type="round"
-            size="small"
-            src={maleAvatar}
-            name="Avatar1"
-          />
-          <AvatarComponent
-            type="round"
-            size="medium"
-            src={maleAvatar}
-            name="Avatar2"
-          />
-          <AvatarComponent
-            type="round"
-            size="large"
-            src={maleAvatar}
-            name="Avatar3"
-          />
+          <div className="avatar_wrapper">
+            <AvatarComponent
+              type="round"
+              size="small"
+              src={maleAvatar}
+              name="Avatar1"
+            />
+            <p>small</p>
+          </div>
+          <div className="avatar_wrapper">
+            <AvatarComponent
+              type="round"
+              size="medium"
+              src={maleAvatar}
+              name="Avatar2"
+            />
+            <p>medium</p>
+          </div>
+          <div className="avatar_wrapper">
+            <AvatarComponent
+              type="round"
+              size="large"
+              src={maleAvatar}
+              name="Avatar3"
+            />
+            <p>large</p>
+          </div>
         </div>
       </div>
       <div>
         <h2 className="avatar_heading_text">Squircle Avatar</h2>
         <div className="avatar_box">
-          <AvatarComponent
-            type="squircle"
-            size="small"
-            src={femaleAvatar}
-            name="Avatar1"
-          />
-          <AvatarComponent
-            type="squircle"
-            size="medium"
-            src={femaleAvatar}
-            name="Avatar2"
-          />
-          <AvatarComponent
-            type="squircle"
-            size="large"
-            src={femaleAvatar}
-            name="Avatar3"
-          />
+          <div className="avatar_wrapper">
+            <AvatarComponent
+              type="squircle"
+              size="small"
+              src={femaleAvatar}
+              name="Avatar1"
+            />
+            <p>small</p>
+          </div>
+          <div className="avatar_wrapper">
+            <AvatarComponent
+              type="squircle"
+              size="medium"
+              src={femaleAvatar}
+              name="Avatar2"
+            />
+            <p>medium</p>
+          </div>
+          <div className="avatar_wrapper">
+            <AvatarComponent
+              type="squircle"
+              size="large"
+              src={femaleAvatar}
+              name="Avatar3"
+            />
+            <p>large</p>
+          </div>
         </div>
       </div>
     </div>

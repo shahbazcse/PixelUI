@@ -44,6 +44,23 @@
   gap: 3rem;
 }
 
+.avatar_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.avatar_wrapper p {
+  font-size: 14px;
+  padding: 0px 8px;
+  border-radius: 8px;
+  background-color: rgb(224, 224, 224);
+  font-family: var(--raleway);
+  letter-spacing: 1px;
+}
+
 .round_avatar {
   border-radius: 50%;
   overflow: hidden;

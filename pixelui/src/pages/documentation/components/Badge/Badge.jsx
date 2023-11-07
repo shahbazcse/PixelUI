@@ -70,18 +70,30 @@ const BadgePreview = () => {
       <div>
         <h2 className="badge_heading_text">Badge on Icons</h2>
         <div className="badge_box">
-          <BadgeComponent type="icon-badge">
-            <MdLocalPostOffice className="icon_style" />
-          </BadgeComponent>
-          <BadgeComponent type="icon-badge">
-            <AiFillChrome className="icon_style" />
-          </BadgeComponent>
-          <BadgeComponent type="icon-badge">
-            <BsFillCartFill className="icon_style" />
-          </BadgeComponent>
-          <BadgeComponent type="icon-badge">
-            <IoMdNotifications className="icon_style" />
-          </BadgeComponent>
+          <div className="badge_wrapper">
+            <BadgeComponent type="icon-badge">
+              <MdLocalPostOffice className="icon_style" />
+            </BadgeComponent>
+            <p>Inbox</p>
+          </div>
+          <div className="badge_wrapper">
+            <BadgeComponent type="icon-badge">
+              <AiFillChrome className="icon_style" />
+            </BadgeComponent>
+            <p>Browser</p>
+          </div>
+          <div className="badge_wrapper">
+            <BadgeComponent type="icon-badge">
+              <BsFillCartFill className="icon_style" />
+            </BadgeComponent>
+            <p>Cart</p>
+          </div>
+          <div className="badge_wrapper">
+            <BadgeComponent type="icon-badge">
+              <IoMdNotifications className="icon_style" />
+            </BadgeComponent>
+            <p>Notifications</p>
+          </div>
         </div>
       </div>
     </div>
