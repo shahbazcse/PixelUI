@@ -1,11 +1,29 @@
 .alert_components {
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
   border-radius: 5px;
   padding: 10px 15px;
   font-weight: bold;
+}
+
+.alert_icon_msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.alert_close {
+  height: 1.4rem;
+  width: 1.4rem;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.alert_close:hover {
+  opacity: 1;
 }
 
 .alert_icons {
@@ -22,6 +40,15 @@
   flex-direction: column;
   gap: 2.2rem;
   font-family: var(--raleway);
+}
+
+.alert_box {
+  border: 1px solid #e7e7e7;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .alert_toggle {
@@ -45,5 +72,11 @@
 .alert_heading_text {
   font-size: 18px;
   margin-bottom: 1.2rem;
+  display: flex;
+  margin-right: auto;
   letter-spacing: 1.2px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  background-color: rgb(224, 224, 224);
+  font-family: var(--raleway);
 }
