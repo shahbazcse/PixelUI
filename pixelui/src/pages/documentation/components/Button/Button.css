@@ -220,9 +220,34 @@
 /* Only Icons */
 
 .btn_icon {
+  height: 2rem;
+  width: fit-content;
+  padding: 26px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: rgba(59, 59, 59, 0.24) 0px 3px 8px;
+  opacity: 1;
+}
+
+.btn_icon:hover {
+  opacity: 0.9;
 }
 
 /* Floating Action Buttons */
 
 .btn_float {
+  height: 2rem;
+  width: fit-content;
+  padding: 22px 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.btn_float:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
