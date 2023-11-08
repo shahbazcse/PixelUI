@@ -109,16 +109,16 @@ const CodePreview = () => {
   
   // Badge on Icons
   <BadgeComponent type="icon-badge">
-      <MdLocalPostOffice className="icon_style" />
+      <MdLocalPostOffice className="icon_style" /> // Insert Icon Here
   </BadgeComponent>
   <BadgeComponent type="icon-badge">
-      <AiFillChrome className="icon_style" />
+      <AiFillChrome className="icon_style" /> // Insert Icon Here
   </BadgeComponent>
   <BadgeComponent type="icon-badge">
-      <BsFillCartFill className="icon_style" />
+      <BsFillCartFill className="icon_style" /> // Insert Icon Here
   </BadgeComponent>
   <BadgeComponent type="icon-badge">
-      <IoMdNotifications className="icon_style" />
+      <IoMdNotifications className="icon_style" /> // Insert Icon Here
   </BadgeComponent>`;
   return <CodeBlock codeText={codeText} />;
 };
