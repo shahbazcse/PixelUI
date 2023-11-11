@@ -41,8 +41,9 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  top: 0;
   position: sticky;
+  top: 0;
+  z-index: 999;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 16px 0px;
@@ -137,7 +138,7 @@ body {
   width: 60%;
   height: inherit;
   padding: 0 16vh 0 0;
-  overflow: overlay;
+  overflow: auto;
 }
 
 .docs-main::-webkit-scrollbar {
@@ -164,12 +165,6 @@ body {
   line-height: 30px;
 }
 
-.footer {
-  background-color: black;
-  color: white;
-  height: 10vh;
-}
-
 /* Footer */
 
 .footer {
@@ -182,6 +177,7 @@ body {
   font-family: var(--raleway);
   margin-top: 4rem;
   height: 12rem;
+  background-color: black;
 }
 
 .footer .socials {
