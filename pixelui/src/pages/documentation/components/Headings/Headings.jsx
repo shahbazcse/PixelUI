@@ -23,27 +23,6 @@ const HeadingsPreview = () => {
       <div className="box">
         <h6 className="header-6">Heading 6</h6>
       </div>
-      <div className="box">
-        <p className="subtitle-1">Subtitle 1</p>
-      </div>
-      <div className="box">
-        <p className="subtitle-2">Subtitle 2</p>
-      </div>
-      <div className="box">
-        <p className="body-1">Body 1</p>
-      </div>
-      <div className="box">
-        <p className="body-2">Body 2</p>
-      </div>
-      <div className="box">
-        <p className="btn-text">Button</p>
-      </div>
-      <div className="box">
-        <p className="caption">Caption</p>
-      </div>
-      <div className="box">
-        <p className="overline">OVERLINE</p>
-      </div>
     </div>
   );
 };
@@ -54,14 +33,7 @@ const CodePreview = () => {
   <h3 className="header-3">Heading 3</h3>
   <h4 className="header-4">Heading 4</h4>
   <h5 className="header-5">Heading 5</h5>
-  <h6 className="header-6">Heading 6</h6>
-  <p className="subtitle-1">Subtitle 1</p>
-  <p className="subtitle-2">Subtitle 2</p>
-  <p className="body-1">Body 1</p>
-  <p className="body-2">Body 2</p>
-  <p className="btn-text">Button</p>
-  <p className="caption">Caption</p>
-  <p className="overline">OVERLINE</p>`;
+  <h6 className="header-6">Heading 6</h6>`;
   return <CodeBlock codeText={codeText} />;
 };
 
