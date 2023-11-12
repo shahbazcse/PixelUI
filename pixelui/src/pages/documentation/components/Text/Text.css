@@ -1,0 +1,41 @@
+.subtitle-1 {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.subtitle-2 {
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 142%;
+}
+
+.body-1 {
+  font-weight: normal;
+  font-size: 1.25rem;
+  line-height: 138%;
+}
+
+.body-2 {
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.btn-text {
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 150%;
+}
+
+.caption {
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 130%;
+}
+
+.overline {
+  font-weight: 800;
+  font-size: 0.625rem;
+  line-height: 158%;
+}
