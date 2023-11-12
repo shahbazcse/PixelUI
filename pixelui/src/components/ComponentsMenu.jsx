@@ -93,18 +93,18 @@ function ComponentsMenu() {
         </li>
         <li>
           <div
-            style={isActive("/docs/components/image")}
-            onClick={() => navigate("/docs/components/image")}
-          >
-            Image
-          </div>
-        </li>
-        <li>
-          <div
             style={isActive("/docs/components/text")}
             onClick={() => navigate("/docs/components/text")}
           >
             Text
+          </div>
+        </li>
+        <li>
+          <div
+            style={isActive("/docs/components/image")}
+            onClick={() => navigate("/docs/components/image")}
+          >
+            Image
           </div>
         </li>
       </ul>
