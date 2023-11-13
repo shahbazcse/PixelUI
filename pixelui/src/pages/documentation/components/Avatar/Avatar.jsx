@@ -128,7 +128,10 @@ function Avatar() {
   return (
     <div>
       <h1>Avatar</h1>
-      <p className="desc">Description goes here</p>
+      <p className="desc">
+        Customize user profiles with images avatars, adding a personal touch
+        to your platform.
+      </p>
       <div className="avatar_toggle">
         <button
           onClick={() => setShowCode(false)}

@@ -53,7 +53,10 @@ function Text() {
   return (
     <div>
       <h1>Text</h1>
-      <p className="desc">Description goes here</p>
+      <p className="desc">
+        Style and present textual content elegantly, ensuring clarity and
+        readability for a seamless user experience.
+      </p>
       <div className="avatar_toggle">
         <button
           onClick={() => setShowCode(false)}

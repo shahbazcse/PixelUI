@@ -49,7 +49,10 @@ function Headings() {
   return (
     <div>
       <h1>Headings</h1>
-      <p className="desc">Description goes here</p>
+      <p className="desc">
+        Establish a clear hierarchy in your content, guiding users through
+        information with structured and visually distinct titles.
+      </p>
       <div className="avatar_toggle">
         <button
           onClick={() => setShowCode(false)}

@@ -137,7 +137,10 @@ function Alert() {
   return (
     <div>
       <h1>Alert</h1>
-      <p className="desc">Description goes here</p>
+      <p className="desc">
+        Notify users promptly with dynamic messages, ensuring important
+        information is instantly communicated.
+      </p>
       <div className="alert_toggle">
         <button
           onClick={() => setShowCode(false)}

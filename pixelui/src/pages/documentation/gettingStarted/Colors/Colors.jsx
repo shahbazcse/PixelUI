@@ -5,7 +5,10 @@ function Colors() {
   return (
     <div>
       <h1>Colors</h1>
-      <p className="desc">Description goes here</p>
+      <p className="desc">
+        Infuse vibrancy and meaning into design elements, creating a visually
+        appealing and coherent user interface.
+      </p>
       <div className="colors">
         <div>
           <h2 className="color_heading_text">Layout</h2>

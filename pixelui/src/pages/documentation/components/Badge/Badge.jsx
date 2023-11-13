@@ -135,7 +135,10 @@ function Badge() {
   return (
     <div>
       <h1>Badge</h1>
-      <p className="desc">Description goes here</p>
+      <p className="desc">
+        Highlight key information or status, offering a visually striking
+        way to draw attention to content.
+      </p>
       <div className="avatar_toggle">
         <button
           onClick={() => setShowCode(false)}

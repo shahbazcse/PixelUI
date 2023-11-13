@@ -74,7 +74,10 @@ function Image() {
   return (
     <div>
       <h1>Image</h1>
-      <p className="desc">Description goes here</p>
+      <p className="desc">
+        Enhance visual appeal with responsive images, conveying information or
+        evoking emotions through compelling visuals.
+      </p>
       <div className="avatar_toggle">
         <button
           onClick={() => setShowCode(false)}

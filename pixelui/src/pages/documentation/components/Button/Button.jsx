@@ -357,7 +357,10 @@ function Button() {
   return (
     <div>
       <h1>Button</h1>
-      <p className="desc">Description goes here</p>
+      <p className="desc">
+        Drive user interaction through primary, link, icon, or floating action
+        buttons for seamless navigation.
+      </p>
       <div className="avatar_toggle">
         <button
           onClick={() => setShowCode(false)}

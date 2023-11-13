@@ -42,7 +42,7 @@ const CardComponent = ({
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            color: "gray"
+            color: "gray",
           }}
           className={`card_size_${cardSize}`}
         >
@@ -56,7 +56,7 @@ const CardComponent = ({
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            color: "gray"
+            color: "gray",
           }}
           className={`card_size_${cardSize}  card_radius_${cardRadius}`}
         >
@@ -594,7 +594,10 @@ function Card() {
   return (
     <div>
       <h1>Card</h1>
-      <p className="desc">Description goes here</p>
+      <p className="desc">
+        Organize and present content in versatile containers, enhancing visual
+        appeal and structuring information effectively.
+      </p>
       <div className="avatar_toggle">
         <button
           onClick={() => setShowCode(false)}
