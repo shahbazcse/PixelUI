@@ -30,6 +30,8 @@ const AlertComponent = ({ status, children, action }) => {
       alertTextColor = "#5690ce";
       alertBackgroundColor = "#CCE2FC";
       break;
+    default:
+      break;
   }
 
   return (
@@ -60,6 +62,8 @@ const AlertIcons = ({ status }) => {
       break;
     case "info":
       alertIcon = <AiOutlineInfoCircle className="alert_icons" />;
+      break;
+    default:
       break;
   }
 

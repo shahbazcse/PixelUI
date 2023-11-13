@@ -15,6 +15,8 @@ const ImageComponent = ({ imageType, img }) => {
       return <img className="img_round" src={img} alt="Sample" />;
     case "img-squircle":
       return <img className="img_squircle" src={img} alt="Sample" />;
+    default:
+      break;
   }
 };
 

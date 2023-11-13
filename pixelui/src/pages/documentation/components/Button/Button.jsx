@@ -47,6 +47,8 @@ const ButtonComponent = ({ type, color, radius, children, btnText }) => {
           {children}
         </div>
       );
+    default:
+      break;
   }
 };
 

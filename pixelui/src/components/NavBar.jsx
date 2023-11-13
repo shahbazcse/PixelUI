@@ -37,6 +37,7 @@ function NavBar() {
             className="navlink"
             href="https://github.com/shahbazcse/PixelUI"
             target="_blank"
+            rel="noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -53,6 +54,7 @@ function NavBar() {
             className="navlink"
             href="https://www.linkedin.com/in/shahbazcse/"
             target="_blank"
+            rel="noreferrer"
           >
             <svg
               width="28"
@@ -71,6 +73,7 @@ function NavBar() {
             className="navlink"
             href="https://twitter.com/shahbaz_cse"
             target="_blank"
+            rel="noreferrer"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

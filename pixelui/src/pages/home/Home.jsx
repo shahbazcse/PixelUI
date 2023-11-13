@@ -24,9 +24,10 @@ function Home() {
             <PiArrowRightThin className="home_icon" />
           </div>
           <a
+            className="btn_github"
             href="https://github.com/shahbazcse/PixelUI"
             target="_blank"
-            className="btn_github"
+            rel="noreferrer"
           >
             <BsGithub className="home_icon" />
             <p>Github</p>

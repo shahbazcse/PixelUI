@@ -125,6 +125,8 @@ const CardComponent = ({
           <div className="card_label">{cardLabel && <p>{cardLabel}</p>}</div>
         </div>
       );
+    default:
+      break;
   }
 };
 

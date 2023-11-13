@@ -17,6 +17,8 @@ const AvatarComponent = ({ type, size, src, name }) => {
     case "large":
       imgSize = "76px";
       break;
+    default:
+      break;
   }
   return (
     <div
@@ -129,8 +131,8 @@ function Avatar() {
     <div>
       <h1>Avatar</h1>
       <p className="desc">
-        Customize user profiles with images avatars, adding a personal touch
-        to your platform.
+        Customize user profiles with images avatars, adding a personal touch to
+        your platform.
       </p>
       <div className="avatar_toggle">
         <button

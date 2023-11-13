@@ -20,6 +20,8 @@ const BadgeComponent = ({ type, status, img, name, children }) => {
       );
     case "icon-badge":
       return <div className="icon_badge">{children}</div>;
+    default:
+      break;
   }
 };
 
@@ -136,8 +138,8 @@ function Badge() {
     <div>
       <h1>Badge</h1>
       <p className="desc">
-        Highlight key information or status, offering a visually striking
-        way to draw attention to content.
+        Highlight key information or status, offering a visually striking way to
+        draw attention to content.
       </p>
       <div className="avatar_toggle">
         <button
