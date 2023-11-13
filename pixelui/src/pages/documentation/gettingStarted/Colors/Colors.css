@@ -20,12 +20,12 @@
   border: 1px solid #e7e7e7;
   background-color: #f8f8f8;
   border-radius: 8px;
-  padding: 16px;
+  padding: 26px;
   width: fit-content;
   display: flex;
   flex-wrap: wrap;
   align-items: end;
-  gap: 3rem;
+  gap: 2.7rem;
 }
 
 .color_card {
