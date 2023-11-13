@@ -4,9 +4,9 @@ import { Routes, Route } from "react-router-dom";
 import Home from "../pages/home/Home";
 import Documentation from "../pages/documentation/Documentation";
 
-import Introduction from "../pages/documentation/gettingStarted/Introduction";
-import Colors from "../pages/documentation/gettingStarted/Colors";
-import Typography from "../pages/documentation/gettingStarted/Typography";
+import Introduction from "../pages/documentation/gettingStarted/Introduction/Introduction";
+import Colors from "../pages/documentation/gettingStarted/Colors/Colors";
+import Typography from "../pages/documentation/gettingStarted/Typography/Typography";
 
 import Avatar from "../pages/documentation/components/Avatar/Avatar";
 import Alert from "../pages/documentation/components/Alert/Alert";
