@@ -63,8 +63,8 @@
   text-align: left;
   width: 70%;
   font-size: 24px;
-  font-weight: bold;
   line-height: 2.4rem;
+  font-family: var(--poppins);
 }
 
 .home_buttons {
@@ -91,6 +91,7 @@
   border-radius: 2rem;
   background-color: #338df3;
   color: white;
+  font-family: var(--poppins);
 }
 
 .btn_getstarted:hover {
@@ -117,6 +118,7 @@
   border-radius: 2rem;
   background-color: white;
   color: #000000;
+  font-family: var(--poppins);
 }
 
 .btn_github:hover {
