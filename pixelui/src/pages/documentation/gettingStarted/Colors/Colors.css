@@ -1,0 +1,156 @@
+.colors {
+  border: 1px solid #e7e7e7;
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  margin-top: 2rem;
+}
+
+.color_heading_text {
+  font-size: 18px;
+  margin-bottom: 1.2rem;
+  letter-spacing: 1.2px;
+  font-family: var(--raleway);
+}
+
+.color_box {
+  border: 1px solid #e7e7e7;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 16px;
+  width: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 3rem;
+}
+
+.color_card {
+  height: 9rem;
+  width: 9rem;
+  border-radius: 14px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.color_card p{
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+  font-family: var(--roboto);
+}
+
+/* Layout */
+
+.color_background {
+  background: #FFFFFF;
+}
+
+.color_background:hover {
+  opacity: 0.8;
+}
+
+.color_divider {
+  background: rgba(17, 17, 17, 0.15);
+}
+
+.color_divider:hover {
+  opacity: 0.8;
+}
+
+/* Content */
+
+.content1 {
+  background: #FFFFFF;
+}
+
+.content1:hover {
+  opacity: 0.8;
+}
+
+.content2 {
+  background: #f4f4f5;
+}
+
+.content2:hover {
+  opacity: 0.8;
+}
+
+.content3 {
+  background: #e4e4e7;
+}
+
+.content3:hover {
+  opacity: 0.8;
+}
+
+.content4 {
+  background: #d4d4d8;
+}
+
+.content4:hover {
+  opacity: 0.8;
+}
+
+/* Base */
+
+.color_default {
+  background-color: rgb(185, 185, 185);
+  color: #000000;
+}
+
+.color_default:hover {
+  opacity: 0.8;
+}
+
+.color_primary {
+  background-color: #338df3;
+  color: white;
+}
+
+.color_primary:hover {
+  opacity: 0.8;
+}
+
+.color_secondary {
+  background-color: #9353d3;
+  color: white;
+}
+
+.color_secondary:hover {
+  opacity: 0.8;
+}
+
+.color_success {
+  background-color: #46d483;
+  color: #000000;
+}
+
+.color_success:hover {
+  opacity: 0.8;
+}
+
+.color_warning {
+  background-color: #f7b750;
+  color: #000000;
+}
+
+.color_warning:hover {
+  opacity: 0.8;
+}
+
+.color_danger {
+  background-color: #f54180;
+  color: white;
+}
+
+.color_danger:hover {
+  opacity: 0.8;
+}
