@@ -53,7 +53,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;
+  gap: 26px;
 }
 
 .navright {
@@ -61,10 +61,11 @@ body {
 }
 
 .nav_logo {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
   cursor: pointer;
-  margin-right: 2.2rem;
+  margin-right: 1.5rem;
+  font-family: var(--mont);
 }
 
 .nav_logo span {
@@ -183,10 +184,11 @@ body {
   gap: 52px;
   align-items: center;
   color: rgba(226, 226, 226, 0.767);
-  font-family: var(--raleway);
+  font-family: var(--roboto);
   margin-top: 4rem;
   height: 12rem;
   background-color: black;
+  letter-spacing: 0.8px;
 }
 
 .footer .socials {
@@ -196,7 +198,6 @@ body {
 }
 
 .footer p {
-  font-family: var(--roboto);
   margin-top: 0.5rem;
   color: #2b80e2;
   font-size: 1.4rem;

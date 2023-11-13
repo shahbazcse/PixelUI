@@ -17,7 +17,7 @@ function Footer() {
           </a>
         </div>
       </div>
-      <span>ComponentLibrary © 2023</span>
+      <span>PixelUI © 2023</span>
     </div>
   );
 }
