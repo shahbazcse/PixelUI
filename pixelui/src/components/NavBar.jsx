@@ -16,8 +16,8 @@ function NavBar() {
   return (
     <div className="nav">
       <div className="navleft">
-        <div onClick={() => navigate("/")} className="navlink">
-          Logo
+        <div onClick={() => navigate("/")} className="nav_logo">
+          Pixel<span>UI</span>
         </div>
         <div
           style={isActive("guide")}
@@ -38,7 +38,7 @@ function NavBar() {
         <div className="socials">
           <a
             className="navlink"
-            href="https://github.com/shahbazcse"
+            href="https://github.com/shahbazcse/PixelUI"
             target="_blank"
           >
             <svg

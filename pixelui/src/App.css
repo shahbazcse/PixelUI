@@ -51,11 +51,28 @@ body {
 
 .navleft {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 24px;
 }
 
 .navright {
   display: flex;
+}
+
+.nav_logo {
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 2.2rem;
+}
+
+.nav_logo span {
+  padding: 4px 8px;
+  margin-left: 6px;
+  border-radius: 8px;
+  color: #67beff;
+  background-color: #e7e7e770;
 }
 
 .navlink {
@@ -80,17 +97,10 @@ body {
 }
 
 .main {
-  height: 60rem;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 3rem;
-}
-
-.home {
-  height: inherit;
-  padding: 1rem;
-  margin: 8vh 16vh 0 16vh;
 }
 
 .docs {
@@ -138,7 +148,6 @@ body {
   width: 60%;
   height: inherit;
   padding: 0 16vh 0 0;
-  overflow: auto;
 }
 
 .docs-main::-webkit-scrollbar {
@@ -203,5 +212,5 @@ body {
 .footer a:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
-  color: #0B76F1;
+  color: #0b76f1;
 }
