@@ -11,9 +11,9 @@ function Home() {
     <div className="home_main">
       <div className="home_left">
         <p className="home_desc">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          ullam voluptate harum quae magni. Quaerat maxime deleniti atque nulla
-          aperiam.
+          Discover a rich CSS Component Library with Avatar, Alert, Badge,
+          Button, Card, Headings, Text, and Image components for seamless web
+          design.
         </p>
         <div className="home_buttons">
           <div
