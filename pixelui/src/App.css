@@ -235,7 +235,7 @@ body {
 }
 
 .nondesktop .container {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -247,13 +247,8 @@ body {
   margin-left: 1rem;
   margin-right: 1rem;
   padding: 2rem;
-  background: linear-gradient(
-    to left bottom,
-    rgb(55, 65, 81),
-    rgb(17, 24, 39),
-    rgb(0, 0, 0)
-  );
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 4px 4px 0px rgba(80, 119, 248, 0.377);
+  background: #0F0F0F;
+  box-shadow: 1px 1px 20px 0px #2d3748;
   border-radius: 0.375rem;
   color: #fff;
 }
