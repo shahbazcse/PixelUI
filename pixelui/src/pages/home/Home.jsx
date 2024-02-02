@@ -18,13 +18,13 @@ function Home() {
           design.
         </p>
         <div className="home_buttons">
-          <div
+          <a
             onClick={() => navigate("/docs/guide/introduction")}
             className="btn_getstarted"
           >
             <p>Get Started</p>
             <PiArrowRightThin className="home_icon" />
-          </div>
+          </a>
           <a
             className="btn_github"
             href="https://github.com/shahbazcse/PixelUI"

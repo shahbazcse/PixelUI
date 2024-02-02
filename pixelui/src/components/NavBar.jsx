@@ -16,20 +16,6 @@ function NavBar() {
         <div onClick={() => navigate("/")} className="nav_logo">
           Pixel<span>UI</span>
         </div>
-        {/* <div
-          style={isActive("guide")}
-          onClick={() => navigate("/docs/guide/introduction")}
-          className="navlink"
-        >
-          Docs
-        </div>
-        <div
-          style={isActive("components")}
-          onClick={() => navigate("/docs/components/alert")}
-          className="navlink"
-        >
-          Components
-        </div> */}
       </div>
       <div className="navright">
         <div className="socials">
