@@ -38,10 +38,10 @@ body {
   min-width: fit-content;
   font-size: 1.2rem;
   letter-spacing: 0.8px;
-  padding: 1.4rem 7.5rem;
+  padding: 1.4rem 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   gap: 20px;
   position: sticky;
   top: 0;
@@ -63,9 +63,23 @@ body {
   display: none;
 }
 
-@media (min-width: 640px) {
+.menu_icon {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 2rem;
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .nav{
+    align-items: center;
+    padding: 1.4rem 7.5rem;
+  }
   .navright {
     display: flex;
+  }
+  .menu_icon {
+    display: none;
   }
 }
 

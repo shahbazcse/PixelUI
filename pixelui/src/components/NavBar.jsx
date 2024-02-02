@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function NavBar() {
   const navigate = useNavigate();
@@ -13,6 +14,9 @@ function NavBar() {
   return (
     <div className="nav">
       <div className="navleft">
+        <div>
+          <RxHamburgerMenu className="menu_icon" />
+        </div>
         <div onClick={() => navigate("/")} className="nav_logo">
           Pixel<span>UI</span>
         </div>
