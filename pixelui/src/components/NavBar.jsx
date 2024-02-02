@@ -16,7 +16,7 @@ function NavBar() {
         <div onClick={() => navigate("/")} className="nav_logo">
           Pixel<span>UI</span>
         </div>
-        <div
+        {/* <div
           style={isActive("guide")}
           onClick={() => navigate("/docs/guide/introduction")}
           className="navlink"
@@ -29,7 +29,7 @@ function NavBar() {
           className="navlink"
         >
           Components
-        </div>
+        </div> */}
       </div>
       <div className="navright">
         <div className="socials">

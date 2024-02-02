@@ -5,7 +5,7 @@ import ComponentsMenu from "../../components/ComponentsMenu";
 function Documentation() {
   return (
     <div className="docs">
-      <ComponentsMenu />
+      {/* <ComponentsMenu /> */}
       <div className="docs-main">
         <Outlet />
       </div>
