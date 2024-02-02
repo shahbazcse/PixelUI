@@ -115,7 +115,7 @@
   cursor: pointer;
   box-shadow: rgba(59, 59, 59, 0.24) 0px 3px 8px;
   font-family: var(--roboto);
-  border-radius: 2rem;
+  border-radius: 1rem;
   background-color: white;
   color: #000000;
   font-family: var(--poppins);
