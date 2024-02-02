@@ -13,6 +13,7 @@
     rgba(166, 239, 253, 1) 90.1%
   );
   overflow-y: auto;
+  overflow: hidden;
 }
 
 .home_left {
