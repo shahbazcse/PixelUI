@@ -7,6 +7,8 @@ import { useNavigate } from "react-router-dom";
 function Home() {
   const navigate = useNavigate();
 
+  // TODO: Fix responsiveness across all devices
+
   return (
     <div className="home_main">
       <div className="home_left">
