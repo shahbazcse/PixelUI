@@ -3,8 +3,8 @@ import { IoIosDesktop } from "react-icons/io";
 
 const NonDesktopPage = () => {
   return (
-    <div class="container">
-      <div class="message">
+    <div className="container">
+      <div className="message">
         <IoIosDesktop className="icon" />
         <h1 className="heading">Switch to Desktop Mode</h1>
         <p className="guideline">
