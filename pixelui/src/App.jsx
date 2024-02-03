@@ -14,9 +14,11 @@ function App() {
       </div> */}
       <div className="App">
         <NavBar />
-        <div className="main">
+        <div className="sidebar_main">
           <ComponentsMenu />
-          <AppRoutes />
+          <div className="main">
+            <AppRoutes />
+          </div>
         </div>
         {/* <Footer /> */}
       </div>

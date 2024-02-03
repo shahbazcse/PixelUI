@@ -41,7 +41,7 @@ body {
   padding: 1.4rem 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   gap: 20px;
   position: sticky;
   top: 0;
@@ -66,14 +66,14 @@ body {
 .menu_icon {
   height: 2rem;
   width: 2rem;
-  margin-right: 2rem;
+  margin-right: 0.8rem;
   display: block;
 }
 
 @media (min-width: 1024px) {
   .nav {
     align-items: center;
-    padding: 1.4rem 7.5rem;
+    padding: 1.4rem 3rem;
   }
   .navright {
     display: flex;
@@ -120,11 +120,23 @@ body {
   opacity: 100%;
 }
 
+.sidebar_main {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
 .main {
   height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .main {
+    margin-left: 18rem;
+  }
 }
 
 .main_content {
@@ -153,6 +165,11 @@ body {
   width: 18rem;
   gap: 20px;
   background-color: #ffffff;
+  position: fixed;
+  top: 1;
+  left: 0;
+  height: 100%;
+  z-index: 998;
 }
 
 @media (min-width: 1024px) {
