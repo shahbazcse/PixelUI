@@ -17,6 +17,11 @@ export const AppProvider = ({ children }) => {
                     ...state,
                     openLink: action.payload
                 }
+            case "TOGGLE_MOBILE_NAVBAR":
+                return {
+                    ...state,
+                    mobileNavbar: action.payload
+                }
             default:
                 return state
         }
@@ -24,7 +29,8 @@ export const AppProvider = ({ children }) => {
 
     const [state, dispatch] = useReducer(reducerFn, {
         selectedLink: "",
-        openLink: false
+        openLink: false,
+        mobileNavbar: false
     });
 
     return (

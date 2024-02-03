@@ -47,9 +47,6 @@ body {
   top: 0;
   z-index: 999;
   background-color: #ffffff;
-  /* -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 16px 0px; */
 }
 
 .navleft {

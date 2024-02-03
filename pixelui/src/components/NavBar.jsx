@@ -17,7 +17,7 @@ function NavBar() {
   return (
     <div className="nav noselect">
       <div className="navleft">
-        <div>
+        <div onClick={() => dispatch({ type: "TOGGLE_MOBILE_NAVBAR", payload: true })}>
           <RxHamburgerMenu className="menu_icon" />
         </div>
         <div onClick={handleNavigate} className="nav_logo">
