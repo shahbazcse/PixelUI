@@ -75,28 +75,28 @@ const AlertPreview = () => {
     <div className="alert">
       <div className="alert_box">
         <h2 className="alert_heading_text">Error</h2>
-        <AlertComponent status="error" action={() => {}}>
+        <AlertComponent status="error" action={() => { }}>
           <AlertIcons status="error" />
           There was a problem creating your account!
         </AlertComponent>
       </div>
       <div className="alert_box">
         <h2 className="alert_heading_text">Success</h2>
-        <AlertComponent status="success" action={() => {}}>
+        <AlertComponent status="success" action={() => { }}>
           <AlertIcons status="success" />
           Thank you. Your submission has been sent.
         </AlertComponent>
       </div>
       <div className="alert_box">
         <h2 className="alert_heading_text">Warning</h2>
-        <AlertComponent status="warning" action={() => {}}>
+        <AlertComponent status="warning" action={() => { }}>
           <AlertIcons status="warning" />
           Your daily data bandwith is about to end.
         </AlertComponent>
       </div>
       <div className="alert_box">
         <h2 className="alert_heading_text">Info</h2>
-        <AlertComponent status="info" action={() => {}}>
+        <AlertComponent status="info" action={() => { }}>
           <AlertIcons status="info" />
           You've been inactive for a while, so we logged you out. Please Login
           to continue.
@@ -139,7 +139,7 @@ function Alert() {
   };
 
   return (
-    <div>
+    <div className="alert_main">
       <h1>Alert</h1>
       <p className="desc">
         Notify users promptly with dynamic messages, ensuring important

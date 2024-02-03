@@ -3,7 +3,7 @@ import "./Colors.css";
 
 function Colors() {
   return (
-    <div>
+    <div className="colors_main">
       <h1>Colors</h1>
       <p className="desc">
         Infuse vibrancy and meaning into design elements, creating a visually

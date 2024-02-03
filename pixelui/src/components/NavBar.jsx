@@ -1,34 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
+import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 function NavBar() {
   const navigate = useNavigate();
 
-  const isActive = (routeType) => {
-    const path = window.location.pathname;
-    const nowActive = path.toLowerCase().includes(routeType);
-    return { color: nowActive ? "#0B76F1" : "" };
-  };
+  const { dispatch } = useContext(AppContext);
+
+  const handleNavigate = () => {
+    dispatch({ type: "TOGGLE_LINK", payload: false });
+    dispatch({ type: "SET_LINK", payload: "" });
+    navigate("/");
+  }
 
   return (
-    <div className="nav">
+    <div className="nav noselect">
       <div className="navleft">
-        <div onClick={() => navigate("/")} className="nav_logo">
+        <div>
+          <RxHamburgerMenu className="menu_icon" />
+        </div>
+        <div onClick={handleNavigate} className="nav_logo">
           Pixel<span>UI</span>
-        </div>
-        <div
-          style={isActive("guide")}
-          onClick={() => navigate("/docs/guide/introduction")}
-          className="navlink"
-        >
-          Docs
-        </div>
-        <div
-          style={isActive("components")}
-          onClick={() => navigate("/docs/components/alert")}
-          className="navlink"
-        >
-          Components
         </div>
       </div>
       <div className="navright">

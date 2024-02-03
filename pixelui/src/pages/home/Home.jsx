@@ -1,11 +1,20 @@
-import React from "react";
 import "./Home.css";
+import React, { useContext } from "react";
+import { AppContext } from "../../context/AppContext";
 import { PiArrowRightThin } from "react-icons/pi";
 import { BsGithub } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
 function Home() {
   const navigate = useNavigate();
+
+  const { dispatch } = useContext(AppContext);
+
+  const handleNavigate = () => {
+    dispatch({ type: "SET_LINK", payload: "guide" });
+    dispatch({ type: "TOGGLE_LINK", payload: true });
+    navigate("/docs/guide/introduction");
+  };
 
   return (
     <div className="home_main">
@@ -16,13 +25,10 @@ function Home() {
           design.
         </p>
         <div className="home_buttons">
-          <div
-            onClick={() => navigate("/docs/guide/introduction")}
-            className="btn_getstarted"
-          >
+          <a onClick={handleNavigate} className="btn_getstarted">
             <p>Get Started</p>
             <PiArrowRightThin className="home_icon" />
-          </div>
+          </a>
           <a
             className="btn_github"
             href="https://github.com/shahbazcse/PixelUI"

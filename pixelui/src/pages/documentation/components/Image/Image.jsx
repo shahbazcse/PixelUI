@@ -74,7 +74,7 @@ function Image() {
   };
 
   return (
-    <div>
+    <div className="images_main">
       <h1>Image</h1>
       <p className="desc">
         Enhance visual appeal with responsive images, conveying information or

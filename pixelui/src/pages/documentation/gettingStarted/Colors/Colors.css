@@ -1,4 +1,9 @@
+.colors_main {
+  width: 100%;
+}
+
 .colors {
+  width: 100%;
   border: 1px solid #e7e7e7;
   border-radius: 8px;
   padding: 24px;
@@ -40,7 +45,7 @@
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.color_card p{
+.color_card p {
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 0.4px;
@@ -50,7 +55,7 @@
 /* Layout */
 
 .color_background {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .color_background:hover {
@@ -68,7 +73,7 @@
 /* Content */
 
 .content1 {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .content1:hover {

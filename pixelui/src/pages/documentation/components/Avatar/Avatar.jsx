@@ -128,7 +128,7 @@ function Avatar() {
   };
 
   return (
-    <div>
+    <div className="avatar_main">
       <h1>Avatar</h1>
       <p className="desc">
         Customize user profiles with images avatars, adding a personal touch to
