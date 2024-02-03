@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useContext, useEffect } from "react";
+import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa6";
 import { FaChevronUp } from "react-icons/fa";
@@ -6,8 +7,7 @@ import { FaChevronUp } from "react-icons/fa";
 function ComponentsMenu() {
   const navigate = useNavigate();
 
-  const [selectedLink, setSelectedLink] = useState("");
-  const [openLink, setOpenLink] = useState(false);
+  const { state: { selectedLink, openLink }, dispatch } = useContext(AppContext);
 
   const isActive = (navlink) => {
     const path = window.location.pathname;
@@ -16,13 +16,18 @@ function ComponentsMenu() {
 
   const handleSelectLink = (type) => {
     if (type !== selectedLink) {
-      setOpenLink(false);
-      setSelectedLink(type);
-      setOpenLink(true);
+      dispatch({ type: "TOGGLE_LINK", payload: false });
+      dispatch({ type: "SET_LINK", payload: type });
+      dispatch({ type: "TOGGLE_LINK", payload: true });
     } else {
-      setOpenLink(!openLink);
+      dispatch({ type: "TOGGLE_LINK", payload: !openLink });
     }
   };
+
+  useEffect(() => {
+    const isPathActive = window.location.pathname.split('/').includes("guide") ? "guide" : window.location.pathname.split('/').includes("components") ? "components" : "";
+    handleSelectLink(isPathActive);
+  }, []);
 
   return (
     <div className="docs-nav noselect">
