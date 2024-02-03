@@ -143,3 +143,35 @@ span {
   background-color: #eeedeb;
   cursor: pointer;
 }
+
+.nav_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  position: fixed;
+  bottom: 0;
+  left: 25%;
+}
+
+.socials {
+  display: flex;
+  gap: 24px;
+}
+
+.socials svg {
+  opacity: 70%;
+}
+
+.socials svg:hover {
+  opacity: 100%;
+}
+
+.navlink {
+  cursor: pointer;
+}
+
+.navlink:hover {
+  color: rgb(85, 85, 85);
+}
