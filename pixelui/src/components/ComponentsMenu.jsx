@@ -7,7 +7,10 @@ import { FaChevronUp } from "react-icons/fa";
 function ComponentsMenu() {
   const navigate = useNavigate();
 
-  const { state: { selectedLink, openLink }, dispatch } = useContext(AppContext);
+  const {
+    state: { selectedLink, openLink },
+    dispatch,
+  } = useContext(AppContext);
 
   const isActive = (navlink) => {
     const path = window.location.pathname;
@@ -24,17 +27,29 @@ function ComponentsMenu() {
     }
   };
 
-  useEffect(() => {
-    const isPathActive = window.location.pathname.split('/').includes("guide") ? "guide" : window.location.pathname.split('/').includes("components") ? "components" : "";
+  const setDefault = () => {
+    const isPathActive = window.location.pathname.split("/").includes("guide")
+      ? "guide"
+      : window.location.pathname.split("/").includes("components")
+        ? "components"
+        : "";
     handleSelectLink(isPathActive);
+  }
+
+  useEffect(() => {
+    return setDefault();
   }, []);
 
   return (
     <div className="docs-nav noselect">
       <>
         <p onClick={() => handleSelectLink("guide")}>
-          <div>Guide</div>
-          {openLink && selectedLink === "guide" ? <FaChevronUp /> : <FaChevronDown />}
+          <span>Guide</span>
+          {openLink && selectedLink === "guide" ? (
+            <FaChevronUp />
+          ) : (
+            <FaChevronDown />
+          )}
         </p>
         {openLink && selectedLink === "guide" ? (
           <ul className="list">
@@ -54,8 +69,12 @@ function ComponentsMenu() {
       </>
       <>
         <p onClick={() => handleSelectLink("components")}>
-          <div>Components</div>
-          {openLink && selectedLink === "components" ? <FaChevronUp /> : <FaChevronDown />}
+          <span>Components</span>
+          {openLink && selectedLink === "components" ? (
+            <FaChevronUp />
+          ) : (
+            <FaChevronDown />
+          )}
         </p>
         {openLink && selectedLink === "components" ? (
           <ul className="list">

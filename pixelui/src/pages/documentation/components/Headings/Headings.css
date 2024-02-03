@@ -1,4 +1,4 @@
-.headings_main{
+.headings_main {
   width: 100%;
 }
 
@@ -18,7 +18,7 @@
   border-radius: 8px;
   padding: 0.5rem 1.5rem;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   flex-wrap: wrap;
   max-width: fit-content;
   overflow-y: auto;

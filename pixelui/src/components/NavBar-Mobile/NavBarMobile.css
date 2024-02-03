@@ -2,7 +2,7 @@
   background-color: #060b26;
   height: 80px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -41,7 +41,7 @@
 
 .nav-text {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   padding: 8px 0px 8px 16px;
   list-style: none;
@@ -73,7 +73,7 @@
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -87,7 +87,7 @@ span {
 
 .docs-nav {
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   border-right: 1px solid rgba(128, 128, 128, 0.212);
   font-family: var(--raleway);
   letter-spacing: 1px;
@@ -123,15 +123,15 @@ span {
   display: flex;
   color: rgba(0, 0, 0, 0.521);
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 10px;
   margin: 0 0 0 1rem;
 }
 
 .list li {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   list-style-type: none;
   width: 100%;

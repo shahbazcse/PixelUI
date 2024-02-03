@@ -25,10 +25,10 @@ function Home() {
           design.
         </p>
         <div className="home_buttons">
-          <a onClick={handleNavigate} className="btn_getstarted">
+          <div onClick={handleNavigate} className="btn_getstarted">
             <p>Get Started</p>
             <PiArrowRightThin className="home_icon" />
-          </a>
+          </div>
           <a
             className="btn_github"
             href="https://github.com/shahbazcse/PixelUI"

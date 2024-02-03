@@ -7,10 +7,12 @@ import { FaChevronUp } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 
 const NavBarMobile = () => {
-    const { state: { selectedLink, openLink, mobileNavbar }, dispatch } = useContext(AppContext);
+    const {
+        state: { selectedLink, openLink, mobileNavbar },
+        dispatch,
+    } = useContext(AppContext);
 
     const navigate = useNavigate();
-
 
     const isActive = (navlink) => {
         const path = window.location.pathname;
@@ -27,20 +29,44 @@ const NavBarMobile = () => {
         }
     };
 
-    useEffect(() => {
-        const isPathActive = window.location.pathname.split('/').includes("guide") ? "guide" : window.location.pathname.split('/').includes("components") ? "components" : "";
+    const setDefault = () => {
+        const isPathActive = window.location.pathname.split("/").includes("guide")
+            ? "guide"
+            : window.location.pathname.split("/").includes("components")
+                ? "components"
+                : "";
         handleSelectLink(isPathActive);
+    };
+
+    useEffect(() => {
+        setDefault();
     }, []);
 
     return (
         <nav className={mobileNavbar ? "nav-menu active" : "nav-menu"}>
             <ul className="nav-menu-items">
                 <div className="docs-nav active-nav noselect">
-                    <IoMdClose style={{ height: "2rem", width: "2rem", padding: "0.25rem", marginLeft: "auto", borderRadius: "8px", backgroundColor: "#eeedeb" }} onClick={() => dispatch({ type: "TOGGLE_MOBILE_NAVBAR", payload: !mobileNavbar })} />
+                    <IoMdClose
+                        style={{
+                            height: "2rem",
+                            width: "2rem",
+                            padding: "0.25rem",
+                            marginLeft: "auto",
+                            borderRadius: "8px",
+                            backgroundColor: "#eeedeb",
+                        }}
+                        onClick={() =>
+                            dispatch({ type: "TOGGLE_MOBILE_NAVBAR", payload: !mobileNavbar })
+                        }
+                    />
                     <>
                         <p onClick={() => handleSelectLink("guide")}>
-                            <div>Guide</div>
-                            {openLink && selectedLink === "guide" ? <FaChevronUp /> : <FaChevronDown />}
+                            <span>Guide</span>
+                            {openLink && selectedLink === "guide" ? (
+                                <FaChevronUp />
+                            ) : (
+                                <FaChevronDown />
+                            )}
                         </p>
                         {openLink && selectedLink === "guide" ? (
                             <ul className="list">
@@ -53,15 +79,21 @@ const NavBarMobile = () => {
                                     <div style={isActive("/docs/guide/colors")}>Colors</div>
                                 </li>
                                 <li onClick={() => navigate("/docs/guide/typography")}>
-                                    <div style={isActive("/docs/guide/typography")}>Typography</div>
+                                    <div style={isActive("/docs/guide/typography")}>
+                                        Typography
+                                    </div>
                                 </li>
                             </ul>
                         ) : null}
                     </>
                     <>
                         <p onClick={() => handleSelectLink("components")}>
-                            <div>Components</div>
-                            {openLink && selectedLink === "components" ? <FaChevronUp /> : <FaChevronDown />}
+                            <span>Components</span>
+                            {openLink && selectedLink === "components" ? (
+                                <FaChevronUp />
+                            ) : (
+                                <FaChevronDown />
+                            )}
                         </p>
                         {openLink && selectedLink === "components" ? (
                             <ul className="list">
@@ -81,7 +113,9 @@ const NavBarMobile = () => {
                                     <div style={isActive("/docs/components/card")}>Card</div>
                                 </li>
                                 <li onClick={() => navigate("/docs/components/headings")}>
-                                    <div style={isActive("/docs/components/headings")}>Headings</div>
+                                    <div style={isActive("/docs/components/headings")}>
+                                        Headings
+                                    </div>
                                 </li>
                                 <li onClick={() => navigate("/docs/components/text")}>
                                     <div style={isActive("/docs/components/text")}>Text</div>

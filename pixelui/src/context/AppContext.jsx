@@ -1,8 +1,7 @@
-import React from 'react';
+import React from "react";
 import { createContext, useReducer } from "react";
 
 export const AppContext = createContext();
-
 
 export const AppProvider = ({ children }) => {
     const reducerFn = (state, action) => {
@@ -10,32 +9,32 @@ export const AppProvider = ({ children }) => {
             case "SET_LINK":
                 return {
                     ...state,
-                    selectedLink: action.payload
-                }
+                    selectedLink: action.payload,
+                };
             case "TOGGLE_LINK":
                 return {
                     ...state,
-                    openLink: action.payload
-                }
+                    openLink: action.payload,
+                };
             case "TOGGLE_MOBILE_NAVBAR":
                 return {
                     ...state,
-                    mobileNavbar: action.payload
-                }
+                    mobileNavbar: action.payload,
+                };
             default:
-                return state
+                return state;
         }
-    }
+    };
 
     const [state, dispatch] = useReducer(reducerFn, {
         selectedLink: "",
         openLink: false,
-        mobileNavbar: false
+        mobileNavbar: false,
     });
 
     return (
         <AppContext.Provider value={{ state, dispatch }}>
             {children}
         </AppContext.Provider>
-    )
-}
+    );
+};

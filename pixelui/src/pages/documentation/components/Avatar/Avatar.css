@@ -1,4 +1,4 @@
-.avatar_main{
+.avatar_main {
   width: 100%;
 }
 
@@ -43,7 +43,7 @@
   border-radius: 8px;
   padding: 16px;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   gap: 3rem;
   flex-wrap: wrap;
   max-width: fit-content;
