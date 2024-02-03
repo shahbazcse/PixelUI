@@ -12,7 +12,7 @@ function NavBar() {
   };
 
   return (
-    <div className="nav">
+    <div className="nav noselect">
       <div className="navleft">
         <div>
           <RxHamburgerMenu className="menu_icon" />
