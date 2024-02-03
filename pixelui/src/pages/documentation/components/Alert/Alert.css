@@ -1,3 +1,7 @@
+.alert_main {
+  width: 100%;
+}
+
 .alert_components {
   display: flex;
   flex-wrap: wrap;

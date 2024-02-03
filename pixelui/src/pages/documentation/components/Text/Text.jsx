@@ -51,7 +51,7 @@ function Text() {
   };
 
   return (
-    <div>
+    <div className="text_main">
       <h1>Text</h1>
       <p className="desc">
         Style and present textual content elegantly, ensuring clarity and

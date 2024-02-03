@@ -339,7 +339,7 @@ const CardPreview = () => {
                 By using this website you automatically accept that we use
                 cookies.
               </div>
-              <button onClick={() => {}}>Understood</button>
+              <button onClick={() => { }}>Understood</button>
             </CardComponent>
             <p>medium</p>
           </div>
@@ -594,7 +594,7 @@ function Card() {
     textUnderlineOffset: "8px",
   };
   return (
-    <div>
+    <div className="card_main">
       <h1>Card</h1>
       <p className="desc">
         Organize and present content in versatile containers, enhancing visual

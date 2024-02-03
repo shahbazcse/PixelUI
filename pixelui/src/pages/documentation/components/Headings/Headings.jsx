@@ -47,7 +47,7 @@ function Headings() {
   };
 
   return (
-    <div>
+    <div className="headings_main">
       <h1>Headings</h1>
       <p className="desc">
         Establish a clear hierarchy in your content, guiding users through

@@ -135,7 +135,7 @@ function Badge() {
   };
 
   return (
-    <div>
+    <div className="avatar_badge_main">
       <h1>Badge</h1>
       <p className="desc">
         Highlight key information or status, offering a visually striking way to
